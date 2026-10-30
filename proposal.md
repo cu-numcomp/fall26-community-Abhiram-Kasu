@@ -1,30 +1,36 @@
 # Community Software Analysis Proposal
 Please edit this file and push to your repository.
 
-## Software: *NAME_OF_PACKAGE_HERE*
+## Software: *Eigen*
 
-*Write a paragraph describing what the software does and who its
-primary audience is.*
+Eigen is a header-only C++ linear algebra library that provides dense and sparse
+matrices, vectors, matrix decompositions, numerical solvers, and geometry tools.
+Its template-heavy interface makes mathematical expressions convenient to write
+and allows dimension checks at compile time when matrix sizes are known in
+advance. Expression templates and vectorization help avoid unnecessary
+temporaries and improve performance. Its primary audience is C++ developers,
+researchers, and engineers building numerical software, including scientific
+computing, robotics, computer graphics, and machine learning applications.
 
 ### Stats
 
 | Description | Your answer |
 |---------|-----------|
-| Repository URL |    |
-| Main/documentation website |    |
-| Year project was started |   |
-| Number of contributors in the past year | `git shortlog -se --since=2025-11-01` may be useful |
-| Number of contributors in the lifetime of the project |   |
-| Number of distinct affiliations | 1, 2-5, 5-10, >10 |
-| Where do development discussions take place? | e.g., GitHub/GitLab issues, mailing list, Slack, etc.  |
-| Typical number of emails/comments per week? |   |
-| Typical number of commits per week? |  |
-| Typical commit size | `git log --shortstat` may be useful |
-| How does the project accept contributions? | e.g., pull requests, patches on mailing lists   |
-| Does the project have an automated test suite? | yes/no |
-| Does the project use continuous integration? | yes/no |
-| Does the project have an AI contribution policy? | link |
-| Are any legal/licensing steps required to contribute? | no or explain below |
+| Repository URL | [libeigen/eigen on GitLab](https://gitlab.com/libeigen/eigen) |
+| Main/documentation website | [Project website](https://libeigen.gitlab.io/); [API documentation](https://libeigen.gitlab.io/eigen/docs-nightly/) |
+| Year project was started | 2006 (Eigen 1); Eigen 2 development began in 2007 |
+| Number of contributors in the past year | 56 Git author identities, November 1, 2025–October 30, 2026. |
+| Number of contributors in the lifetime of the project | 663 Git author identities in the available main-branch history. |
+| Number of distinct affiliations | >10, estimated from organizational email domains in the commit history; see the measurement notes below. |
+| Where do development discussions take place? | [GitLab issues](https://gitlab.com/libeigen/eigen/-/issues), [merge requests](https://gitlab.com/libeigen/eigen/-/merge_requests), and Discord. The [contribution guide](https://gitlab.com/libeigen/eigen/-/blob/master/CONTRIBUTING.md) identifies Discord as the primary chat channel. |
+| Typical number of emails/comments per week? | About 50 public GitLab comment events per week: 199 over October 2–29, 2026, including bot activity. | 
+| Typical number of commits per week? | About 25 per week on average: 1,308 commits over November 1, 2025–October 30, 2026. |
+| Typical commit size | Usually around 3 files changed and ~80-100 lines added/deleted in total per nonempty commit over the same year. |
+| How does the project accept contributions? | Fork the GitLab repository, create a topic branch, and submit a merge request. Include tests and documentation as appropriate; discuss large changes first. See the [contribution guide](https://gitlab.com/libeigen/eigen/-/blob/master/CONTRIBUTING.md). |
+| Does the project have an automated test suite? | Yes; CMake/CTest-based tests, documented in the [build and test instructions](https://gitlab.com/libeigen/eigen/-/blob/master/CONTRIBUTING.md#build-and-test). |
+| Does the project use continuous integration? | Yes; [GitLab CI pipelines](https://gitlab.com/libeigen/eigen/-/pipelines) run automated checks and tests. |
+| Does the project have an AI contribution policy? | Yes; the [provenance and attribution rules](https://gitlab.com/libeigen/eigen/-/blob/master/CONTRIBUTING.md#provenance-and-attribution) explicitly cover AI-suggested code, and [AGENTS.md](https://gitlab.com/libeigen/eigen/-/blob/master/AGENTS.md) gives agent-specific guidance. AI-suggested code must meet the same source attribution and license compatibility requirements. |
+| Are any legal/licensing steps required to contribute? | Contributions must have compatible licensing and appropriate copyright/license headers. No CLA or copyright assignment is required, according to the [contribution guide](https://gitlab.com/libeigen/eigen/-/blob/master/CONTRIBUTING.md#copyright-and-credit). |
 
 ### Install and run
 
@@ -37,13 +43,6 @@ encountered a problem.
 - [ ] The test suite passes
 
 ### Notes/concerns/risks
-
-Please comment on any anomalies or known risks to following this
-project, if you were unable to answer any questions above, or
-otherwise have concerns about the appropriateness of the software.  If
-the project requires a contributor license agreement or other
-procedural steps, please explain here.  "None at this time" is
-acceptable for this question.
 
 #### Note on copyright
 Students retain copyright on any work done in completion of a CU
